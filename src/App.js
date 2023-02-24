@@ -11,6 +11,8 @@ import {Routes, Route, useLocation} from "react-router-dom"
 import MovieDetail from "./pages/MovieDetail";
 //Animation
 import { AnimatePresence } from "framer-motion";
+import ScrollTop from "./components/ScrollTop";
+
 
 function App() {
   const location = useLocation();
@@ -19,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle/>
+      <ScrollTop/>
       <Nav/>
       {/* Router */}
       <AnimatePresence mode="wait">
