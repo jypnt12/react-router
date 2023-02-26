@@ -1,5 +1,7 @@
 import React from 'react'
 import home1 from '../img/Adlas_08.jpg'
+import gtown from '../img/gtown.jpg'
+import play from '../img/pix22.jpg'
 import { Link } from 'react-router-dom'
 //Animations
 import { motion } from 'framer-motion';
@@ -10,32 +12,38 @@ import { useScroll } from '../components/useScroll'
 const DetailSection = () => {
     const [element, controls] = useScroll();
     const [element2, controls2] = useScroll();
+    const [element3, controls3] = useScroll();
   return (
         
     <motion.div exit='exit' variants={pageAnimation} initial='hidden' animate='show'>
         
         <StyledHome style={{color:'black'}}>
             <Hide>
-                <motion.h2 variants={fade}>Provides...</motion.h2>
+                <motion.h4 variants={fade}>Provides...</motion.h4>
             </Hide>
 
-            <Description ref={element} variants={fade} animate={controls} initial="hidden">
+            <Movie ref={element} variants={fade} animate={controls} initial="hidden">
                 <Hide>
                     <motion.h2 variants={fade}><span>Education</span></motion.h2>
                 </Hide>
-                <Image>
-                    <motion.img variants={photoAnim} src={home1} alt='adlas campus'/>
-                </Image>
-                
-            </Description>
+                <motion.div className="line" variants={lineAnim}></motion.div>
+                <img src={gtown} alt=''/>
+            </Movie>
             
-            <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-            <h2>The Racer</h2>
-            <motion.div className="line" variants={lineAnim}></motion.div>
-            
+            <Movie ref={element2} variants={fade} animate={controls2} initial="hidden">
+                <Hide>
+                    <motion.h2 variants={fade}><span>Home</span></motion.h2>
+                </Hide>
+                <motion.div className="line" variants={lineAnim}></motion.div>
                 <img src={home1} alt=''/>
-            
-        </Movie>
+            </Movie>
+            <Movie ref={element3} variants={fade} animate={controls3} initial="hidden">
+                <Hide>
+                    <motion.h2 variants={fade}><span>Experience to remember</span></motion.h2>
+                </Hide>
+                <motion.div className="line" variants={lineAnim}></motion.div>
+                <img src={play} alt=''/>
+            </Movie>
         </StyledHome>
         
         
