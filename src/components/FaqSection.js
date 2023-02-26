@@ -11,21 +11,21 @@ const FaqSection = () => {
   return (
     
         <Faq variants={fade} ref={element} animate={controls} >
-            <h2>Any Questions <span>FAQ</span></h2>
-            <Toggle title={"How do I start?"}>
+            <h2><span>Mission and Vision </span></h2>
+            <Toggle title={"Mission"}>
             
                 <div className="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi cupiditate ex expedita porro ad doloribus eum natus possimus soluta dolore a mollitia sapiente consequatur dolor, dignissimos aliquam eius obcaecati?</p>
+                    <p>Inspired by her patroness, the Virgin of the Poor, the Sisters of Mary Schools shall direct their energy and resources to the poorest of the poor youth of the country by way of providing them with high quality Secondary Education intensive on Vocational-Technical Curriculum molding them into citizens committed to serve the nation, to love their fellow being, and spread moral and spiritual values based on the Gospels.</p>
                 </div>
            
             </Toggle>
-            <Toggle title={"Daily Schedule"}>
+            <Toggle title={"Vision"}>
                 <div className="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi cupiditate ex expedita porro ad doloribus eum natus possimus soluta dolore a mollitia sapiente consequatur dolor, dignissimos aliquam eius obcaecati?</p>
+                    <p>The Sisters of Mary School envisions that the graduates, in their everyday life and in the pursuit of their calling, will become the new disciples in spreading the work of redemption, and at the same time teach and lead by example the Marian virtues of simplicity, charity, gratitude and joy.</p>
                 </div>
              
             </Toggle>
-            <Toggle title={"Different Payment Methods"}>
+            {/* <Toggle title={"Different Payment Methods"}>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi cupiditate ex expedita porro ad doloribus eum natus possimus soluta dolore a mollitia sapiente consequatur dolor, dignissimos aliquam eius obcaecati?</p>
                 </div>
@@ -34,7 +34,7 @@ const FaqSection = () => {
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi cupiditate ex expedita porro ad doloribus eum natus possimus soluta dolore a mollitia sapiente consequatur dolor, dignissimos aliquam eius obcaecati?</p>
                 </div>
-            </Toggle>
+            </Toggle> */}
            
             
         </Faq>

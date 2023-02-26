@@ -7,13 +7,19 @@ const Nav = () => {
     const {pathname} = useLocation();
   return (
     <StyledNav>
-        <h1><Link to="/"  id='logo'>Capture</Link></h1>
+        <h1><Link to="/"  id='logo'>The Sisters of Mary School - Adlas</Link></h1>
         <ul>
             <li>
-                <Link to='/'>About us</Link>
+                <Link to='/'>Home</Link>
                 <Line transition={{duration:0.75}} 
                     initial={{width:"0%"}} 
                     animate={{width:pathname==="/" ? "50%":"0%"}}/>
+            </li>
+            <li>
+                <Link to='/about'>About us</Link>
+                <Line transition={{duration:0.75}} 
+                    initial={{width:"0%"}} 
+                    animate={{width:pathname==="/about" ? "50%":"0%"}}/>
             </li>
             <li>
                 <Link to='/work'>Our work</Link>
@@ -34,7 +40,7 @@ const Nav = () => {
 };
 
 const StyledNav = styled.nav`
-    min-height: 10vh;
+    min-height: 5vh;
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -54,7 +60,7 @@ const StyledNav = styled.nav`
     }
     #logo{
         font-size: 1.5rem;
-        font-family: "Lobster", cursive;
+        font-family: 'PT Serif', serif;
         font-weight: lighter;
     }
     li{

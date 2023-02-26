@@ -12,6 +12,7 @@ import MovieDetail from "./pages/MovieDetail";
 //Animation
 import { AnimatePresence } from "framer-motion";
 import ScrollTop from "./components/ScrollTop";
+import Home from "./pages/Home";
 
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
       {/* Router */}
       <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" exact element={<AboutUs/>}/>
+      <Route path="/" exact element={<Home/>}/>
+        <Route path="/about" element={<AboutUs/>}/>
         <Route path="/work" element={<OurWork/>} />
         <Route path="/work/:id" exact element={<MovieDetail/>} />
         <Route path="/contact" element={<ContactUs/>} />

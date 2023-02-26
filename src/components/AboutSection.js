@@ -1,30 +1,34 @@
-import React from 'react'
-import home1 from '../img/home1.png'
+import React, {useState} from 'react'
+import home1 from '../img/adlas.jpg'
 //styled components
 import {About, Description, Image, Hide} from '../styles'
 //Framer motion
 import {motion} from 'framer-motion';
 import {titleAnim, fade, photoAnim} from "../animation"
 import Wave from './Wave';
+import AboutSMS from './AboutSMS';
 
 const AboutSection = () => {
 
-    
+    const [Toggle, setToggle] = useState(true);
   return (
     <About>
         <Description>
             <motion.div >
                 <Hide>
-                    <motion.h2 variants={titleAnim}>We work to make</motion.h2>
+                    <motion.h2 variants={titleAnim}>The Glory of</motion.h2>
                 </Hide>
                 <Hide>
-                    <motion.h2 variants={titleAnim}>your <span>dreams</span> come</motion.h2>
+                    <motion.h2 variants={titleAnim}> <span>God </span> is  Man Fully</motion.h2>
                 </Hide>
                 <Hide>
-                    <motion.h2 variants={titleAnim}>true.</motion.h2>
+                    <motion.h2 variants={titleAnim}>Alive.</motion.h2>
                 </Hide>
             </motion.div>
-            <motion.p variants={fade}>Contact us for any photography ideas that you have. We are profesionals with amazing skills</motion.p>
+            <motion.p variants={fade} >The Sisters of Mary Congregation was founded by Msgr. Aloysius Schwartz, an American diocesan priest now known as Venerable Aloysius Schwartz,
+             in 1964 in Busan, South Korea to provide free educational and vocational welfare for the underprivileged children/youth, medical care to the sick and the dying,
+              and shelter service to the homeless and helpless.</motion.p>
+                                
             <motion.button variants={fade}>Contact us</motion.button>
         </Description>
         <Image>

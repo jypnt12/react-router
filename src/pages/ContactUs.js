@@ -9,26 +9,26 @@ const ContactUs = () => {
     <ContactStyle style={{background:"#fff"}} exit='exit' variants={pageAnimation} initial='hidden' animate='show'> 
     <Title>
       <Hide>
-        <motion.h2 variants={titleAnim}>Get in touch</motion.h2>
+        <motion.h2 variants={titleAnim}>Sisters of Mary School - Adlas, Inc.</motion.h2>
       </Hide>
     </Title>
     <div>
       <Hide>
       <Social variants={titleAnim}>
         <Circle/>
-        <h2>Send us a message</h2>
+        <h2>Bo. Adlas, Silang Cavite</h2>
       </Social>
       </Hide>
       <Hide>
       <Social variants={titleAnim}>
         <Circle/>
-        <h2>Social media</h2>
+        <h2>Tel No. (02) 529-8318; (046) 865-2546;</h2>
       </Social>
       </Hide>
       <Hide>
       <Social variants={titleAnim}>
         <Circle/>
-        <h2>Send an email</h2>
+        <h2>Email: smsadlas@thesistersofmaryschools.edu.ph</h2>
       </Social>
       </Hide>
     </div>

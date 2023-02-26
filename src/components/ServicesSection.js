@@ -3,7 +3,7 @@ import clock from '../img/clock.svg'
 import diaphragm from '../img/diaphragm.svg'
 import money from '../img/money.svg'
 import teamwork from '../img/teamwork.svg'
-import home2 from '../img/home2.png'
+import home2 from '../img/duties.jpg'
 //styles
 import {About, Description, Image} from "../styles"
 import styled from 'styled-components'
@@ -16,44 +16,44 @@ const ServicesSection = () => {
   return (
     <Services ref = {element} animate={controls} variants={fade}>
         <Description>
-            <h2>High <span>quality</span> services.</h2>
+            <h2><span>Four Basic Duties.</span></h2>
             <Cards>
                 <Card>
                     <div className="icon">
                         <img src={clock} alt="" />
-                        <h3>Efficient</h3>
+                        <h3>Study</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>The student’s main duty is to study.</p>
 
                 </Card>
                 <Card>
                     <div className="icon">
                         <img src={teamwork} alt="" />
-                        <h3>Teamwork</h3>
+                        <h3>Pray</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>All human beings are to communicate with God, their Creator and Father.</p>
                     
                 </Card>
                 <Card>
                     <div className="icon">
                         <img src={diaphragm} alt="" />
-                        <h3>Diaphragm</h3>
+                        <h3>Work</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Each student must recognize the value of work, discipline and diligence.</p>
                     
                 </Card>
                 <Card>
                     <div className="icon">
                         <img src={money} alt="" />
-                        <h3>Money</h3>
+                        <h3>Play</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>It is necessary to have a healthy mind and body. </p>
                     
                 </Card>
             </Cards>
         </Description>
         <Image>
-            <img src={home2} alt="" />
+            <img src={home2} alt="schedule" />
         </Image>
     </Services>
   )

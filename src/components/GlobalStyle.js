@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
 
     } 
     h3{
-        color: white;
+        color: #1b1b1b;
     }  
     h4{
         font-weight: bold;
@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
     }
     span{
         font-weight: bold;
-        color: #23d997;
+        color: #2f23d9;
     }
     p{
         padding: 3rem 0rem;
