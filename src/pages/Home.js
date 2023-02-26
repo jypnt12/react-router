@@ -25,7 +25,7 @@ const Home = () => {
             </Description>
         </StyledHome>
         <Image>
-            <motion.img variants={photoAnim} src={home1} alt='guy with the camera'/>
+            <motion.img variants={photoAnim} src={home1} alt='virgin of the poor'/>
         </Image>
         <DetailSection/>
     </motion.div>
@@ -79,7 +79,7 @@ const Hide = styled.div`
 const Line = styled(motion.div)`
     height: 0.5rem;
     width: 0%;
-    background: #2326d9;
+    background: #011a69;
     /* position: absolute; */
     /* bottom: -80%;
     left: 60%; */
