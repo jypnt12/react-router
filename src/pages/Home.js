@@ -5,36 +5,29 @@ import { motion } from 'framer-motion';
 
 import {titleAnim, fade, photoAnim, pageAnimation, lineAnim } from "../animation"
 import styled from 'styled-components';
+import DetailSection from '../components/DetailSection';
 
 const Home = () => {
   return (
     
     <motion.div exit='exit' variants={pageAnimation} initial='hidden' animate='show'>
-        
         <StyledHome>
-            
             <Description>
                 <motion.div >
-                    
                     <Hide>
                         <motion.h2 variants={titleAnim}>The Sisters of Mary School - Adlas</motion.h2>
-                        <Line transition={{duration:0.75, when: "beforeChildren",
-            staggerChildren: 0.25,}} 
-                    initial={{width:"0%"}} 
-                    animate={{width:"100%"}}/>
+                        <Line transition={{duration:0.75, when: "beforeChildren", staggerChildren: 0.25,}} 
+                            initial={{width:"0%"}} 
+                            animate={{width:"100%"}}/>
                     </Hide>
-                    
-                    
                 </motion.div>
-                {/* <motion.p variants={fade}>Contact us for any photography ideas that you have. We are profesionals with amazing skills</motion.p> */}
                 {/* <motion.button variants={fade}>Contact us</motion.button> */}
             </Description>
-            
-            
         </StyledHome>
         <Image>
-                <motion.img variants={photoAnim} src={home1} alt='guy with the camera'/>
-            </Image>
+            <motion.img variants={photoAnim} src={home1} alt='guy with the camera'/>
+        </Image>
+        <DetailSection/>
     </motion.div>
   )
 }
@@ -75,7 +68,7 @@ const Image = styled.div`
     
     img{
         width: 100%;
-        height: 80vh;
+        height: 50vh;
         object-fit: cover;
     }
 `;

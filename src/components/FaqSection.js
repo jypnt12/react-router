@@ -52,7 +52,7 @@ const Faq =styled(About)`
         font-weight: lighter;
     }
     .faq-line{
-        background: #cccccc;
+        background: #000;
         height: 0.2rem;
         margin: 2rem 0rem;
         width: 100%;

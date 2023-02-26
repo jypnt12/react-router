@@ -66,16 +66,15 @@ const StyledNav = styled.nav`
     li{
         padding-left: 10rem;
         position: relative;
-
     }
 
 `
 const Line = styled(motion.div)`
     height: 0.3rem;
     width: 0%;
-    background: #23d997;
+    background: #2326d9;
     position: absolute;
-    bottom: -80%;
+    bottom: -50%;
     left: 60%;
 `
 export default Nav

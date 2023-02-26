@@ -64,7 +64,7 @@ const Movie = styled(motion.div)`
     padding-bottom: 10rem;
     .line{
         height: 0.5rem;
-        background: #23d997;
+        background: #2326d9;
         margin-bottom: 3rem;
 
     }
