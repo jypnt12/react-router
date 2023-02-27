@@ -11,7 +11,7 @@ const Home = () => {
   return (
     
     <motion.div exit='exit' variants={pageAnimation} initial='hidden' animate='show'>
-        <StyledHome>
+        {/* <StyledHome>
             <Description>
                 <motion.div >
                     <Hide>
@@ -21,13 +21,13 @@ const Home = () => {
                             animate={{width:"100%"}}/>
                     </Hide>
                 </motion.div>
-                {/* <motion.button variants={fade}>Contact us</motion.button> */}
+                <motion.button variants={fade}>Contact us</motion.button>
             </Description>
-        </StyledHome>
+        </StyledHome> */}
         <Image>
             <motion.img variants={photoAnim} src={home1} alt='virgin of the poor'/>
         </Image>
-        <DetailSection/>
+        {/* <DetailSection/> */}
     </motion.div>
   )
 }
@@ -68,7 +68,7 @@ const Image = styled.div`
     
     img{
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         object-fit: cover;
     }
 `;

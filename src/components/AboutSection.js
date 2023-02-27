@@ -16,13 +16,13 @@ const AboutSection = () => {
         <Description>
             <motion.div >
                 <Hide>
-                    <motion.h2 variants={titleAnim}>The Glory of</motion.h2>
+                    <motion.h2 variants={titleAnim}>The  </motion.h2>
                 </Hide>
                 <Hide>
-                    <motion.h2 variants={titleAnim}> <span>God </span> is  Man Fully</motion.h2>
+                    <motion.h2 variants={titleAnim}><span>Glory of God</span> </motion.h2>
                 </Hide>
                 <Hide>
-                    <motion.h2 variants={titleAnim}>Alive.</motion.h2>
+                    <motion.h2 variants={titleAnim}>is  Man Fully Alive.</motion.h2>
                 </Hide>
             </motion.div>
             <motion.p variants={fade} >The Sisters of Mary Congregation was founded by Msgr. Aloysius Schwartz, an American diocesan priest now known as Venerable Aloysius Schwartz,

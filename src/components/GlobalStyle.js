@@ -20,12 +20,12 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.1rem;
         cursor: pointer;
         padding: 1rem 2rem;
-        border: 3px solid #2326d9;
+        border: 3px solid #336699;
         background: transparent;
         color: #000;
         transition: all 0.5s ease;
         &:hover{
-            background-color: #2326d9;
+            background-color: #336699;
             color: white;
         }
 
