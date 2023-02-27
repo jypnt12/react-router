@@ -13,6 +13,7 @@ import MovieDetail from "./pages/MovieDetail";
 import { AnimatePresence } from "framer-motion";
 import ScrollTop from "./components/ScrollTop";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/contact" element={<ContactUs/>} />
       </Routes>
       </AnimatePresence>
+      <Footer/>
     </div>
   );
 }

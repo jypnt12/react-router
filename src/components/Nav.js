@@ -28,7 +28,7 @@ const Nav = () => {
                     animate={{width:pathname==="/work" ? "55%":"0%"}}/>
             </li>
             <li>
-                <Link to='/contact'>Contact us</Link>
+                <Link to='/contact'>Support us</Link>
                 <Line transition={{duration:0.75}} 
                     initial={{width:"0%"}} 
                     animate={{width:pathname==="/contact" ? "60%":"0%"}}/>

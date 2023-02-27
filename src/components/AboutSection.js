@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import home1 from '../img/adlas.jpg'
+import fral from '../img/fr.al.jpg'
 //styled components
 import {About, Description, Image, Hide} from '../styles'
 //Framer motion
@@ -12,6 +13,7 @@ const AboutSection = () => {
 
     const [Toggle, setToggle] = useState(true);
   return (
+    <>
     <About>
         <Description>
             <motion.div >
@@ -29,13 +31,34 @@ const AboutSection = () => {
              in 1964 in Busan, South Korea to provide free educational and vocational welfare for the underprivileged children/youth, medical care to the sick and the dying,
               and shelter service to the homeless and helpless.</motion.p>
                                 
-            <motion.button variants={fade}>Contact us</motion.button>
+            <motion.button variants={fade}>Read more</motion.button>
         </Description>
         <Image>
             <motion.img variants={photoAnim} src={home1} alt='som building'/>
         </Image>
         <Wave/>
     </About>
+    <About>
+        <Image>
+            <motion.img variants={photoAnim} src={fral} alt='Fr. Al'/>
+        </Image>
+        <Description>
+            <motion.div >
+                
+                <Hide>
+                    <motion.h2 variants={titleAnim}><span>Our Founder</span> </motion.h2>
+                </Hide>
+                
+            </motion.div>
+            <motion.p variants={fade} >VENERABLE Aloysius Schwartz was born in Washington D.C. on September 18, 1930 to Louis Schwartz and Cedelia Bourassa.
+             He grew up with the idea of becoming a priest and with the passage of time, this idea became more specific – he would become a secular priest, 
+             work as a missionary and his apostolate would be to the poor and the needy.</motion.p>
+                                
+            <motion.button variants={fade}>Read more</motion.button>
+        </Description>
+        
+    </About>
+    </>
   )
 };
 

@@ -86,7 +86,7 @@ const Ourwork = () => {
 const Work=styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
-    padding: 5rem 10rem;
+    padding: 3rem 10rem;
     h2{
         padding: 1rem 0rem;
     }
@@ -112,20 +112,20 @@ const Hide= styled.div`
 const Frame1 = styled(motion.div)`
     position: fixed;
     left: 0;
-    top: 10%;
+    top: -10%;
     width: 100%;
-    height: 100vh;
-    background:#fffebf ;
+    height: 120vh;
+    background:#01243B ;
     z-index: 2;
 `
 const Frame2 = styled(Frame1)`
-    background: #ff8efb;
+    background: #336699;
 `
 const Frame3 = styled(Frame1)`
     background: #8ed2ff;
 `
 const Frame4 = styled(Frame1)`
-    background: #8effa0;
+    background:  #5288DB;
 `
 
 
