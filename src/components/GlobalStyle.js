@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         /* background: #1b1b1b; */
+        /* background:  #ccd1d9; */
         font-family: 'Inter', sans-serif;
     }
 
@@ -47,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
     }
     span{
         font-weight: bold;
-        color: #2f23d9;
+        color:  #336699;
     }
     p{
         padding: 3rem 0rem;

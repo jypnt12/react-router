@@ -13,25 +13,25 @@ const Nav = () => {
                 <Link to='/'>Home</Link>
                 <Line transition={{duration:0.75}} 
                     initial={{width:"0%"}} 
-                    animate={{width:pathname==="/" ? "50%":"0%"}}/>
+                    animate={{width:pathname==="/" ? "45%":"0%"}}/>
             </li>
             <li>
                 <Link to='/about'>About us</Link>
                 <Line transition={{duration:0.75}} 
                     initial={{width:"0%"}} 
-                    animate={{width:pathname==="/about" ? "50%":"0%"}}/>
+                    animate={{width:pathname==="/about" ? "55%":"0%"}}/>
             </li>
             <li>
                 <Link to='/work'>Our work</Link>
                 <Line transition={{duration:0.75}} 
                     initial={{width:"0%"}} 
-                    animate={{width:pathname==="/work" ? "50%":"0%"}}/>
+                    animate={{width:pathname==="/work" ? "55%":"0%"}}/>
             </li>
             <li>
                 <Link to='/contact'>Contact us</Link>
                 <Line transition={{duration:0.75}} 
                     initial={{width:"0%"}} 
-                    animate={{width:pathname==="/contact" ? "50%":"0%"}}/>
+                    animate={{width:pathname==="/contact" ? "60%":"0%"}}/>
             </li>
         </ul>
         
@@ -40,12 +40,12 @@ const Nav = () => {
 };
 
 const StyledNav = styled.nav`
-    min-height: 5vh;
+    min-height: 2rem;
     display: flex;
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 10rem;
+    padding: 0.1rem 10rem;
     background:#282828;
     position: sticky;
     top: 0;
@@ -64,17 +64,17 @@ const StyledNav = styled.nav`
         font-weight: lighter;
     }
     li{
-        padding-left: 10rem;
+        padding: 1rem 2rem;
         position: relative;
     }
 
 `
 const Line = styled(motion.div)`
-    height: 0.3rem;
+    height: 0.1rem;
     width: 0%;
-    background: #2326d9;
+    background: #7f828b;
     position: absolute;
-    bottom: -50%;
-    left: 60%;
+    bottom: 20%;
+    /* left: 20%; */
 `
 export default Nav

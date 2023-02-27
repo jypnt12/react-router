@@ -60,6 +60,7 @@ const ServicesSection = () => {
 };
 
 const Services = styled(About)`
+    
     h2{
         padding-bottom: 5rem;
     }
@@ -72,10 +73,11 @@ const Services = styled(About)`
 const Cards =styled.div`
     display: flex;
     flex-wrap: wrap;
-
+    
 `
 const Card =styled.div`
     flex-basis: 20rem;
+    
     .icon{
         display: flex;
         align-items: center;

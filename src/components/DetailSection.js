@@ -82,7 +82,7 @@ const Movie = styled(motion.div)`
     margin: 0vh 20vh;
     .line{
         height: 0.5rem;
-        background: #2326d9;
+        background:  #1a224f;
         margin-bottom: 3rem;
 
     }
@@ -110,7 +110,7 @@ const Hide = styled.div`
 const Line = styled(motion.div)`
     height: 0.5rem;
     width: 0%;
-    background: #2326d9;
+    background:  #336699;
    
 `
 
