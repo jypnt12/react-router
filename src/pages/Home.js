@@ -1,5 +1,8 @@
 import React from 'react'
 import home1 from '../img/virginofthepoor.jpg'
+import adlas from '../img/adlas03.jpg'
+import classPic from '../img/class2019a.jpg'
+
 //Animations
 import { motion } from 'framer-motion';
 
@@ -25,7 +28,7 @@ const Home = () => {
             </Description>
         </StyledHome> */}
         <Image>
-            <motion.img variants={photoAnim} src={home1} alt='virgin of the poor'/>
+            <motion.img variants={photoAnim} src={classPic} alt='virgin of the poor'/>
         </Image>
         {/* <DetailSection/> */}
     </motion.div>
@@ -63,7 +66,7 @@ const Description = styled.div`
 const Image = styled.div`
     flex: 1;
     overflow: hidden;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
     margin-top: -25vh;
     
     img{

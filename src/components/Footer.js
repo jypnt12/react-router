@@ -5,7 +5,7 @@ import { About } from '../styles'
 const Footer = () => {
   return (
     <Faq  >
-        <h4><span>support us</span></h4>
+        <h4><span>Support us</span></h4>
     </Faq>
 
 )
