@@ -16,6 +16,8 @@ display: block;
 background-color: #ececec;
 /* align-items: center; */
 text-align: center;
+/* position: relative; */
+margin-top:100vh;
 span{
 display: block;
 }

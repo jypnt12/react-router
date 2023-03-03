@@ -71,3 +71,4 @@ export const sliderContainer = {
     hidden:{ opacity: 1},
     show: {opacity: 1, transition: {staggerChildren:0.1, ease: 'easeOut'}}
 }
+

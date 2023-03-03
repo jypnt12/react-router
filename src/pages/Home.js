@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import home1 from '../img/virginofthepoor.jpg'
 import adlas from '../img/adlas03.jpg'
 import classPic from '../img/class2019a.jpg'
@@ -9,8 +9,28 @@ import { motion } from 'framer-motion';
 import {titleAnim, fade, photoAnim, pageAnimation, lineAnim } from "../animation"
 import styled from 'styled-components';
 import DetailSection from '../components/DetailSection';
+import Carousel from '../components/Carousel';
 
 const Home = () => {
+
+    // const imageArray = [adlas, home1, classPic];
+
+    // const [index, setIndex] = useState(0);
+    // const nextStep=()=>{
+    //    if(index===imageArray.length - 1){
+    //     setIndex(0)
+    //     return
+    //    }
+    //    setIndex(index+1)
+    // }
+    // const prevStep=()=>{
+    //     console.log("prev")
+    //     if(index===0){
+    //         setIndex(imageArray.length - 1)
+    //         return
+    //     }
+    //     setIndex(index-1)
+    // }
   return (
     
     <motion.div exit='exit' variants={pageAnimation} initial='hidden' animate='show'>
@@ -27,9 +47,13 @@ const Home = () => {
                 <motion.button variants={fade}>Contact us</motion.button>
             </Description>
         </StyledHome> */}
-        <Image>
-            <motion.img variants={photoAnim} src={classPic} alt='virgin of the poor'/>
-        </Image>
+        {/* <Image>
+            <motion.img variants={photoAnim} src={imageArray[index]} alt='virgin of the poor' className="slides"/>
+            <button className='prevButton' onClick={prevStep}>b</button>
+            <button className='nextButton' onClick={nextStep}>b</button>
+        </Image>  */}
+        
+        <Carousel/>
         {/* <DetailSection/> */}
     </motion.div>
   )
@@ -38,23 +62,16 @@ const Home = () => {
 // install vscode styled-components extension for styling
 
 const StyledHome = styled.div`
-    /* min-height: 90vh; */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between;
-    padding: 5rem 10rem; */
+    
     color: white;
 `;
 
 const Description = styled.div`
-    /* flex: 1; */
     
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; */
-    /* padding-right: 5rem; */
     z-index: 2;
     margin-top: 10vh;
     h2{
@@ -73,6 +90,43 @@ const Image = styled.div`
         width: 100%;
         height: 100vh;
         object-fit: cover;
+    }
+
+    button{
+        padding: 16px;
+        font-size: 18px;
+        width: 64px;
+        border-radius: 32px;
+        aspect-ratio: 1;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        background-color: #ccc;
+    }
+    button:hover{
+        background-color: #2452;
+    }
+    .prevButton{
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+    }
+    .nextButton{
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+    }
+    .slides{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 `;
 
