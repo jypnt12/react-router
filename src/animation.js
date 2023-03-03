@@ -26,8 +26,9 @@ export const titleAnim ={
     show: {
         y:0,
         transition: {duration: 0.75, ease: 'easeOut' },
-       
-    }
+        
+    },
+    
 };
 
 export const fade = {
@@ -35,6 +36,7 @@ export const fade = {
     show: {
         opacity: 1,
         transition:{ease: 'easeOut', duration: 0.75}
+       
     }
 };
 

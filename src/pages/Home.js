@@ -52,7 +52,24 @@ const Home = () => {
             <button className='prevButton' onClick={prevStep}>b</button>
             <button className='nextButton' onClick={nextStep}>b</button>
         </Image>  */}
-        
+        <Description>
+            <motion.h2 variants={titleAnim}>Serving the Lord with joy.</motion.h2>
+            <motion.p variants={fade}>
+                The Sisters of Mary School strives for excellence in both academic and vocational training with complete facilities and qualified teachers. 
+                 
+                The Sisters of Mary Schools seek to prepare graduates with knowledge that will help them live better lives as ideal Christians by instilling discipline, 
+                a positive work ethic, and a passion for virtues in the minds of the students.
+            </motion.p>
+            <motion.p variants={fade}>
+                The School provides free food, clothing, shelter, medical and dental services, and secondary education for deserving students from poorest of the poor families. 
+            </motion.p>
+            <motion.p variants={fade}> 
+                The Sisters of Mary Schools seek to prepare graduates with knowledge that will help them live better lives as ideal Christians by instilling discipline, 
+                a positive work ethic, and a passion for virtues in the minds of the students.
+            </motion.p>
+            
+        </Description>
+        <Card></Card>
         <Carousel/>
         {/* <DetailSection/> */}
     </motion.div>
@@ -71,14 +88,38 @@ const StyledHome = styled.div`
 `;
 
 const Description = styled.div`
-    
-    z-index: 2;
-    margin-top: 10vh;
+    width: 35%;
+    z-index: 3;
+    /* margin-top: 20vh; */
+    margin:  10rem;
+    position: absolute;
     h2{
-        font-family: 'PT Serif', serif;
+        color: #ffffff;
+        font-weight: bolder;
+        padding: 1vh;
+        
+    }
+    p{
+        /* font-family: 'PT Serif', serif; */
         font-weight: lighter;
+        font-size: 15px;
+        padding: 1vh;
+        color: #d7d7d8;
+        /* margin: 0%; */
     }
 `;
+const Card = styled(motion.div)`
+    
+        position: absolute;
+        z-index: 1;
+        width: 45%;
+        height: 70%;
+        background: #2b2a2b;
+        opacity: 50%;
+        margin: 10vh;
+        border-radius: 10rem 0 10rem 0;
+    
+`
 
 const Image = styled.div`
     flex: 1;
@@ -130,16 +171,7 @@ const Image = styled.div`
     }
 `;
 
-const Hide = styled.div`
-    overflow: hidden;
-`
-const Line = styled(motion.div)`
-    height: 0.5rem;
-    width: 0%;
-    background: #011a69;
-    /* position: absolute; */
-    /* bottom: -80%;
-    left: 60%; */
-`
+
+
 
 export default Home

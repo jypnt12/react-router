@@ -59,7 +59,7 @@ const StyledHome = styled.div`
     flex-direction: column;
     align-items: center; */
     
-    margin: 5vh 20vh;
+    margin: 5vh 10vh;
     color: white;
 `;
 

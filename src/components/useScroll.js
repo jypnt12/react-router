@@ -10,8 +10,6 @@ export const useScroll = () => {
     useEffect(()=>{
         if(view){
             controls.start('show')
-        }else{
-            controls.start('hidden')
         }
     },[view])
 
