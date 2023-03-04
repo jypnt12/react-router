@@ -67,10 +67,11 @@ const Home = () => {
                 The Sisters of Mary Schools seek to prepare graduates with knowledge that will help them live better lives as ideal Christians by instilling discipline, 
                 a positive work ethic, and a passion for virtues in the minds of the students.
             </motion.p>
-            
+            <motion.button variants={fade}>Contact us</motion.button>
         </Description>
         <Card></Card>
         <Carousel/>
+        
         {/* <DetailSection/> */}
     </motion.div>
   )
@@ -106,6 +107,10 @@ const Description = styled.div`
         padding: 1vh;
         color: #d7d7d8;
         /* margin: 0%; */
+    }
+    button{
+        margin: 1rem;
+        color: white;
     }
 `;
 const Card = styled(motion.div)`

@@ -9,7 +9,7 @@ const Nav = () => {
   return (
     <StyledNav>
         
-        <h1><Link to="/"  id='logo'> <img src={adlas}/> The Sisters of Mary School - Adlas</Link></h1>
+        <h1><Link to="/"  id='logo'> <img src={adlas}/> The Sisters of Mary School</Link></h1>
         <ul>
             <li>
                 <Link to='/'>Home</Link>

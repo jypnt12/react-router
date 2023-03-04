@@ -42,7 +42,7 @@ const Carousel = () => {
     
             initial: direction=>{
                 return{
-                x: direction > 0 ? 200 : -200,
+                x: direction > 0 ? 100 : -100,
                 opacity: 0,
                 // scale:0.5,
                 }
@@ -56,7 +56,7 @@ const Carousel = () => {
             },
             exit: direction=>{
                 return{
-                    x: direction > 0 ? -200 : 200,
+                    x: direction > 0 ? -1500 : 1500,
                 opacity: 0,
                 // transition:'ease-in' ,
                 transition: {ease: "easeOut", duration: 1},
@@ -80,11 +80,9 @@ const Carousel = () => {
             </AnimatePresence>
             <button className='prevButton' onClick={prevStep}><FiChevronLeft/> </button>
             <button className='nextButton' onClick={nextStep}><FiChevronRight/></button>
-            
+            <button className='downButton' onClick={nextStep}><FiArrowDown/></button>
         </Slideshow>
-        <div>
-        <FiArrowDown/>
-        </div>
+       
         
     </Container>
   )
@@ -101,22 +99,23 @@ const Slideshow = styled.div`
 
    
     width: 100%;
-    height: 90vh;
+    height: 100%;
     aspect-ratio: calc(16/9);
     position: absolute; 
     overflow: hidden;
     
     button{
-        padding: 16px;
+        padding: 12px;
         font-size: 25px;
-        width: 64px;
+        width: 50px;
+        height: 50px;
         border-radius: 32px;
         aspect-ratio: 1;
         border: none;
         cursor: pointer;
         text-align: center;
         color: white;
-       
+     
         
     }
     button:hover{
@@ -135,6 +134,30 @@ const Slideshow = styled.div`
         top: 50%;
         right: 16px;
         transform: translateY(-50%);
+        
+    }
+    .downButton{
+        position: absolute;
+        bottom: 30px;
+        right: 47%;
+        transform: translateY(-50%);
+        
+        /* pointer-events: none; */
+       
+        animation: arrow-load 2s infinite;
+    }
+    @keyframes arrow-load {
+        0%{
+            opacity: 0;
+            transform: translateX(0px, 30px);
+        }
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+            transform:  translateX(0px);
+        }
     }
     .slides{
         position: absolute;
