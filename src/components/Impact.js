@@ -1,7 +1,7 @@
 import React from 'react'
-import home1 from '../img/Adlas_08.jpg'
-import gtown from '../img/gtown.jpg'
-import play from '../img/pix22.jpg'
+import room from '../img/SMS-01.webp'
+import mass from '../img/mass.jpg'
+import gardening from '../img/SMS-06.jpg'
 import { Link } from 'react-router-dom'
 //Animations
 import { motion } from 'framer-motion';
@@ -19,31 +19,31 @@ const Impact = () => {
         
         <StyledHome style={{color:'black'}}>
             <Hide>
-                <motion.h4 variants={fade}>IMPACT</motion.h4>
+                <motion.h4 variants={fade}>OUR IMPACT</motion.h4>
             </Hide>
         <Card>
-            <Cards ref={element} variants={fade} animate={controls} initial="hidden">
+            <Cards ref={element} variants={fade} animate={controls} initial="hidden" whileHover={{ scale: 1.1 }} transition={{  stiffness: 400, damping: 10 }}>
+            <motion.img src={mass} alt=''/>
                 <motion.h2 variants={fade}><span>Spiritual</span></motion.h2>
-                <img src={gtown} alt=''/>
+                
             </Cards>
             
-            <Cards ref={element2} variants={fade} animate={controls2} initial="hidden">
-                
-                    <motion.h2 variants={fade}><span>Academics</span></motion.h2>
+            <Cards ref={element2} variants={fade} animate={controls2} initial="hidden" whileHover={{ scale: 1.1 }} transition={{  stiffness: 400, damping: 10 }}>
+            <motion.img src={room} alt='' />
+            <motion.h2 variants={fade}><span>Academics</span></motion.h2>
               
                 
-                <img src={home1} alt=''/>
+                
             </Cards>
-            <Cards ref={element3} variants={fade} animate={controls3} initial="hidden">
+            <Cards ref={element3} variants={fade} animate={controls3} initial="hidden" whileHover={{ scale: 1.1 }} transition={{  stiffness: 400, damping: 10 }}>
+                <img src={gardening} alt=''/>
                 
-                    <motion.h2 variants={fade}><span>Personal</span></motion.h2>
-                
-                
-                <img src={play} alt=''/>
+                <motion.h2 ><span>Personal</span></motion.h2>
+               
             </Cards>
         </Card>
         </StyledHome>
-        
+       
         
     </motion.div>
   )
@@ -61,6 +61,12 @@ const StyledHome = styled.div`
     color: white;
     h2{
         font-family: 'Oswald', sans-serif;
+       
+    }
+    h4{
+        /* font-family: 'Kanit', sans-serif;  */
+        color: #336699;;
+        font-family: 'Oswald', sans-serif;
     }
 `;
 
@@ -74,8 +80,10 @@ const Description = styled.div`
     margin: 0vh 20vh;
     /* z-index: 2; */
     /* margin-top: 10vh; */
-    h2{
+    h4{
         font-family: 'Oswald', sans-serif;
+        color: #336699;;
+     
     }
 `;
 const Card = styled(motion.div)`
@@ -83,7 +91,8 @@ const Card = styled(motion.div)`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+   margin: 2rem 10rem;
+   
     .line{
         height: 0.5rem;
         background:  #336699;
@@ -95,31 +104,56 @@ const Card = styled(motion.div)`
 
     
 
-const Cards =styled.div`
+const Cards =styled(motion.div)`
     flex-basis: 25rem;
     height: 60vh;
     background:#ccc ;
-    margin-top: 5rem;
+    margin: 2rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    span{
+        color: white;
+    }
+    
     h2{
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         z-index: 3;
-        /* opacity: 1; */
-        /* h3{
-            margin-left: 1rem;
-            background: white;
-            color: black;
-            padding: 1rem;
-        } */
+        margin-top: -7rem;
+        justify-content: center;
+        color: white;
+        z-index: 5;
     }
     img{
         
         width: 100%;
         height: 60vh;
         object-fit: cover;
+        border-radius: 2rem;
+        
     }
 
 `
+// const Overlay = styled(motion.div)`
+// /* position: relative; */
+//     width: 100%;
+//     height: 60vh;
+//     background:#ccc ;
+//     margin: -35.5rem 0rem;
+//     border-radius: 2rem;
+//     opacity: 0;
+//     transition: all 0.5s ease;
+//     cursor: pointer;
+//     z-index: 3;
+//     &:hover{
+//             background-color: #0a0a0a;
+//             opacity: 50%;
+//             color: white;
+//             filter: brightness(50%);
+//             transition: all 0.5s ease;
+//         }
+// `
 
 const Hide = styled.div`
     overflow: hidden;

@@ -54,7 +54,7 @@ const Home = () => {
             <button className='nextButton' onClick={nextStep}>b</button>
         </Image>  */}
         <Description>
-            <motion.h2 variants={titleAnim}><span >Serving the Lord with Joy.</span></motion.h2>
+            <motion.h2 variants={fade}><span >Serving the Lord with Joy.</span></motion.h2>
             <motion.p variants={fade}>
                 The Sisters of Mary School strives for excellence in both academic and vocational training with complete facilities and qualified teachers. 
                  
@@ -135,56 +135,6 @@ const Card = styled(motion.div)`
         border-radius: 10rem 0 10rem 0;
     
 `
-
-const Image = styled.div`
-    flex: 1;
-    overflow: hidden;
-    /* filter: brightness(50%); */
-    margin-top: -25vh;
-    
-    img{
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-    }
-
-    button{
-        padding: 16px;
-        font-size: 18px;
-        width: 64px;
-        border-radius: 32px;
-        aspect-ratio: 1;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-        color: white;
-        background-color: #ccc;
-    }
-    button:hover{
-        background-color: #2452;
-    }
-    .prevButton{
-        position: absolute;
-        top: 50%;
-        left: 16px;
-        transform: translateY(-50%);
-    }
-    .nextButton{
-        position: absolute;
-        top: 50%;
-        right: 16px;
-        transform: translateY(-50%);
-    }
-    .slides{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-`;
 
 
 
