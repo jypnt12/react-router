@@ -80,7 +80,7 @@ const Carousel = () => {
             </AnimatePresence>
             <button className='prevButton' onClick={prevStep}><FiChevronLeft/> </button>
             <button className='nextButton' onClick={nextStep}><FiChevronRight/></button>
-            <button className='downButton' onClick={nextStep}><FiArrowDown/></button>
+            <button className='downButton' ><FiArrowDown/></button>
         </Slideshow>
        
         

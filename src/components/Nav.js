@@ -9,28 +9,28 @@ const Nav = () => {
   return (
     <StyledNav>
         
-        <h1><Link to="/"  id='logo'> <img src={adlas}/> The Sisters of Mary School</Link></h1>
+        <h1><Link to="/"  id='logo'> <img src={adlas}/>THE SISTERS OF MARY SCHOOL</Link></h1>
         <ul>
             <li>
-                <Link to='/'>Home</Link>
+                <Link to='/'>HOME</Link>
                 <Line transition={{duration:0.75}} 
                     initial={{width:"0%"}} 
                     animate={{width:pathname==="/" ? "45%":"0%"}}/>
             </li>
             <li>
-                <Link to='/about'>About us</Link>
+                <Link to='/about'>ABOUT US</Link>
                 <Line transition={{duration:0.75}} 
                     initial={{width:"0%"}} 
                     animate={{width:pathname==="/about" ? "55%":"0%"}}/>
             </li>
             <li>
-                <Link to='/work'>Our work</Link>
+                <Link to='/work'>OUR WORK</Link>
                 <Line transition={{duration:0.75}} 
                     initial={{width:"0%"}} 
                     animate={{width:pathname==="/work" ? "55%":"0%"}}/>
             </li>
             <li>
-                <Link to='/contact'>Support us</Link>
+                <Link to='/contact'>CONTACT US</Link>
                 <Line transition={{duration:0.75}} 
                     initial={{width:"0%"}} 
                     animate={{width:pathname==="/contact" ? "60%":"0%"}}/>
@@ -59,6 +59,7 @@ const StyledNav = styled.nav`
     ul{
         display: flex;
         list-style: none;
+        
     }
     #logo{
         font-size: 1.5rem;
@@ -69,6 +70,7 @@ const StyledNav = styled.nav`
     li{
         padding: 1rem 2rem;
         position: relative;
+        font-family: 'Kanit', sans-serif;
     }
     img{
         height: 2rem;

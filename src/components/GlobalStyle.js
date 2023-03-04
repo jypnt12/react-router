@@ -55,6 +55,7 @@ const GlobalStyle = createGlobalStyle`
         color: #000;
         font-size: 1.4rem;
         line-height: 150%;
+        font-family: 'Roboto', sans-serif;
     } 
 `
 export default GlobalStyle;

@@ -10,6 +10,7 @@ import {titleAnim, fade, photoAnim, pageAnimation, lineAnim } from "../animation
 import styled from 'styled-components';
 import DetailSection from '../components/DetailSection';
 import Carousel from '../components/Carousel';
+import Impact from '../components/Impact';
 
 const Home = () => {
 
@@ -53,7 +54,7 @@ const Home = () => {
             <button className='nextButton' onClick={nextStep}>b</button>
         </Image>  */}
         <Description>
-            <motion.h2 variants={titleAnim}>Serving the Lord with joy.</motion.h2>
+            <motion.h2 variants={titleAnim}><span >Serving the Lord with Joy.</span></motion.h2>
             <motion.p variants={fade}>
                 The Sisters of Mary School strives for excellence in both academic and vocational training with complete facilities and qualified teachers. 
                  
@@ -71,7 +72,7 @@ const Home = () => {
         </Description>
         <Card></Card>
         <Carousel/>
-        
+        <Impact/>
         {/* <DetailSection/> */}
     </motion.div>
   )
@@ -94,16 +95,23 @@ const Description = styled.div`
     /* margin-top: 20vh; */
     margin:  10rem;
     position: absolute;
+    span{
+        color: #f1db0c;
+       
+        
+    }
+    
     h2{
         color: #ffffff;
         font-weight: bolder;
         padding: 1vh;
-        
+       
     }
     p{
-        /* font-family: 'PT Serif', serif; */
-        font-weight: lighter;
+        
+        /* font-weight: lighter; */
         font-size: 15px;
+        font-family: 'Roboto', sans-serif;
         padding: 1vh;
         color: #d7d7d8;
         /* margin: 0%; */
@@ -111,6 +119,8 @@ const Description = styled.div`
     button{
         margin: 1rem;
         color: white;
+        font-weight: lighter;
+        
     }
 `;
 const Card = styled(motion.div)`
