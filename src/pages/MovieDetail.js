@@ -55,7 +55,7 @@ const Headline= styled.div`
         top: 10%;
         left: 50%;
         transform: translate(-50%, -10%);
-        
+        color: black;
     }
     img{
         width: 100%;

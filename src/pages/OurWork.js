@@ -59,7 +59,9 @@ const Ourwork = () => {
                     <motion.h2 variants={fade}><span>EDUCATION</span></motion.h2>
                 </Hide>
                 <motion.div className="line" variants={lineAnim}></motion.div>
-                <img src={gtown} alt=''/>
+                
+                    <img src={gtown} alt=''/>
+              
             </Movie>
             
             <Movie ref={element2} variants={fade} animate={controls2} initial="hidden">

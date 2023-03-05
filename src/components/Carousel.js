@@ -139,7 +139,7 @@ const Slideshow = styled.div`
     .downButton{
         position: absolute;
         bottom: 30px;
-        right: 47%;
+        right: 49%;
         transform: translateY(-50%);
         
         /* pointer-events: none; */

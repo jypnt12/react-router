@@ -15,29 +15,36 @@ const Impact = () => {
     const [element3, controls3] = useScroll();
   return (
         
-    <motion.div exit='exit' variants={pageAnimation} initial='hidden' animate='show'>
+    <motion.div exit='exit' variants={pageAnimation} initial='hidden' animate='show' >
         
         <StyledHome style={{color:'black'}}>
             <Hide>
                 <motion.h4 variants={fade}>OUR IMPACT</motion.h4>
+                <motion.div className="line" ></motion.div>
             </Hide>
         <Card>
             <Cards ref={element} variants={fade} animate={controls} initial="hidden" whileHover={{ scale: 1.1 }} transition={{  stiffness: 400, damping: 10 }}>
-            <motion.img src={mass} alt=''/>
+            <Link to='/spiritual'>
+                <motion.img src={mass} alt=''/>
+            </Link>
+                
                 <motion.h2 variants={fade}><span>Spiritual</span></motion.h2>
                 
             </Cards>
             
             <Cards ref={element2} variants={fade} animate={controls2} initial="hidden" whileHover={{ scale: 1.1 }} transition={{  stiffness: 400, damping: 10 }}>
-            <motion.img src={room} alt='' />
-            <motion.h2 variants={fade}><span>Academics</span></motion.h2>
+            <Link to='/academics'>
+                <motion.img src={room} alt='' />
+            </Link>
+                <motion.h2 variants={fade}><span>Academics</span></motion.h2>
               
                 
                 
             </Cards>
             <Cards ref={element3} variants={fade} animate={controls3} initial="hidden" whileHover={{ scale: 1.1 }} transition={{  stiffness: 400, damping: 10 }}>
-                <img src={gardening} alt=''/>
-                
+            <Link to='/personal'>
+                <motion.img src={gardening} alt=''/>
+            </Link>
                 <motion.h2 ><span>Personal</span></motion.h2>
                
             </Cards>
@@ -56,8 +63,8 @@ const StyledHome = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    margin: 110vh 10vh 5vh 10vh;
+
+    margin: 100vh 10vh 5vh 10vh;
     color: white;
     h2{
         font-family: 'Oswald', sans-serif;
@@ -67,6 +74,13 @@ const StyledHome = styled.div`
         /* font-family: 'Kanit', sans-serif;  */
         color: #336699;;
         font-family: 'Oswald', sans-serif;
+        margin-top: 7vh;
+    }
+    .line{
+        height: 0.3rem;
+        background:  #336699;
+        /* margin-bottom: 3rem; */
+
     }
 `;
 
@@ -135,6 +149,7 @@ const Cards =styled(motion.div)`
     }
 
 `
+
 // const Overlay = styled(motion.div)`
 // /* position: relative; */
 //     width: 100%;
