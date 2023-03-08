@@ -47,7 +47,8 @@ const Detail = styled(motion.div)`
     color: white;
 `
 const Headline= styled.div`
-    min-height: 90vh;
+    min-height: 40vh;
+    margin: 0rem 10rem;
     padding: 20vh;
     position: relative;
     h2{
@@ -56,6 +57,7 @@ const Headline= styled.div`
         left: 50%;
         transform: translate(-50%, -10%);
         color: black;
+        margin-bottom: 5rem;
     }
     img{
         width: 100%;
@@ -64,9 +66,9 @@ const Headline= styled.div`
     }
 `
 const Awards =styled.div`
-    min-height: 80vh;
+    min-height: 40vh;
     display: flex;
-    margin: 5rem 10rem;
+    margin: 5rem 20rem;
     align-items: center;
     justify-content: space-around;
 `;

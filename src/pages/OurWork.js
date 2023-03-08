@@ -118,7 +118,7 @@ const Frame1 = styled(motion.div)`
     width: 100%;
     height: 120vh;
     background:#01243B ;
-    z-index: 2;
+    z-index: 3;
 `
 const Frame2 = styled(Frame1)`
     background: #336699;

@@ -36,7 +36,7 @@ const ServicesSection = () => {
                 </Card>
                 <Card>
                     <div className="icon">
-                        <img src={diaphragm} alt="" />
+                        <img src={money} alt="" />
                         <h3>Work</h3>
                     </div>
                     <p>Each student must recognize the value of work, discipline and diligence.</p>
@@ -44,7 +44,8 @@ const ServicesSection = () => {
                 </Card>
                 <Card>
                     <div className="icon">
-                        <img src={money} alt="" />
+                        <img src={diaphragm} alt="" />
+                        
                         <h3>Play</h3>
                     </div>
                     <p>It is necessary to have a healthy mind and body. </p>
