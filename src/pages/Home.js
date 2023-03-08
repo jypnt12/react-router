@@ -96,7 +96,7 @@ const Description = styled.div`
     margin:  10rem;
     position: absolute;
     span{
-        color: #f1db0c;
+        color: white;
        
         
     }

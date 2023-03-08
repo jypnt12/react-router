@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styled from 'styled-components';
 // import {slide} from '../animation'
 import { FiChevronRight,FiChevronLeft, FiArrowDown  } from "react-icons/fi";
-import {titleAnim, fade, photoAnim, pageAnimation, lineAnim } from "../animation"
 
 const Carousel = () => {
     
@@ -34,10 +33,13 @@ const Carousel = () => {
         setIndex(index-1)
     }
 
-        // setInterval(()=>{
-        //     nextStep()
-        // },5000)
-    
+    useEffect(()=>{
+        const interval = setInterval(()=>{
+            nextStep()
+        },5000)
+        return () => clearInterval(interval);
+    })
+        
         const slide = {
     
             initial: direction=>{

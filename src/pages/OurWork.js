@@ -3,9 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 //images
-import athlete from '../img/athlete-small.png'
-import theracer from '../img/theracer-small.png'
-import goodtimes from '../img/goodtimes-small.png'
+
 import home1 from '../img/Adlas_08.jpg'
 import gtown from '../img/gtown.jpg'
 import play from '../img/pix22.jpg'

@@ -45,15 +45,19 @@ const MovieDetail = () => {
 
 const Detail = styled(motion.div)`
     color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 20rem;
 `
 const Headline= styled.div`
     min-height: 40vh;
-    margin: 0rem 10rem;
-    padding: 20vh;
+    margin: 10rem 0rem 0rem 0rem;
+    /* padding: 20vh; */
     position: relative;
+    align-items: center;
     h2{
         position: absolute;
-        top: 10%;
+        top: -20%;
         left: 50%;
         transform: translate(-50%, -10%);
         color: black;
@@ -61,16 +65,17 @@ const Headline= styled.div`
     }
     img{
         width: 100%;
-        height: 70vh;
+        height: 50vh;
         object-fit: cover;
+
     }
 `
 const Awards =styled.div`
-    min-height: 40vh;
+    
     display: flex;
-    margin: 5rem 20rem;
-    align-items: center;
-    justify-content: space-around;
+    /* margin: 0rem 20rem; */
+    /* align-items: center; */
+    flex-direction: column;
 `;
 const AwardStyle=styled.div`
     padding: 5rem;
@@ -80,7 +85,7 @@ const AwardStyle=styled.div`
     .line{
         width: 100%;
         background: #336699;
-        height: 0.5rem;
+        height: 0.3rem;
         margin: 1rem 0rem;
     }
     p{
