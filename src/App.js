@@ -14,6 +14,7 @@ import { AnimatePresence } from "framer-motion";
 import ScrollTop from "./components/ScrollTop";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import Note from "./components/Note";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
       <GlobalStyle/>
       <ScrollTop/>
+      <Note/>
       <Nav/>
       {/* Router */}
       <AnimatePresence mode="wait">
